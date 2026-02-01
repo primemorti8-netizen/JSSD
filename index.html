@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>DOOM</title>
+  <title>documentt</title>
   <style>
     body { 
       background: black; 
@@ -11,19 +11,21 @@
       text-align: center; 
       padding-top: 150px; 
       margin: 0;
+      overflow: hidden;
     }
-    h1 { font-size: 60px; text-shadow: 0 0 20px red; }
-    p { font-size: 28px; }
+    h1 { font-size: 70px; text-shadow: 0 0 30px red; animation: pulse 1s infinite; }
+    p { font-size: 30px; }
+    @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
   </style>
 </head>
 <body>
   <h1></h1>
   <p></p>
 
-  <!-- Твой тяжёлый скрипт (берётся прямо из репо) -->
+  <!-- Твой тяжёлый скрипт из репо -->
   <script src="/JSSD/scripts.js"></script>
-  
-  <!-- Альтернатива через CDN (ещё быстрее) -->
+
+  <!-- Или через CDN (быстрее загрузка) -->
   <!-- <script src="https://cdn.jsdelivr.net/gh/primemorti8-netizen/JSSD@main/scripts.js"></script> -->
 </body>
 </html>
